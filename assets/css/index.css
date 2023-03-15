@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body {
+    background: url('../images/bg-pattern-top-mobile.svg') no-repeat,
+                    bottom right url('../images/bg-pattern-bottom-mobile.svg') no-repeat;
+}
+h1 {
+    margin: 1rem 3rem;
+
+    font-size: xx-large;
+}
+h2 {
+    font-size: medium;
+}
+h3 {
+    color: hsl(333, 80%, 67%);
+    font-size: medium;
+    font-weight: 400;
+}
+p {
+    line-height: 1.5;
+}
+main {
+    padding: 1.5rem;
+}
+/*first section*/
+.first-section {
+    padding: 1rem 0;
+
+    color: hsl(300, 43%, 22%);
+    text-align: center;
+}
+.rate {
+    padding: 1rem;
+    margin: 1rem 0;
+
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 0.5rem;
+    text-align: center;
+}
+.rate h2 {
+    margin-top: 0.5rem;
+}
+
+/*second section*/
+.quote {
+    margin: 1rem 0;
+    padding: 2.1rem;
+
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
+}
+.quote__header {
+    margin-bottom: 1.5rem;
+
+    display: flex;
+    gap: 1rem;
+}
+.quote__header img {
+    width: 2rem;
+    border-radius: 50%;
+}
+.quote__header div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+/*footer*/
+.attribution {
+    margin-bottom: 0.5rem;
+
+    font-size: 0.9rem;
+    text-align: center;
+}
+.attribution a:hover {
+    color: hsl(333, 80%, 67%);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (min-width: 800px) {
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    main {
+        width: 60%;
+    }
+}
+@media (min-width: 1100px) {
+    body {
+        background: url('../images/bg-pattern-top-desktop.svg') no-repeat,
+                    bottom right url('../images/bg-pattern-bottom-desktop.svg') no-repeat;
+    }
+    main {
+        width: 80%;
+    }
+    h1 {
+        margin: -1rem 0 1rem;
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: large;
+    }
+    .first-section {
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header {
+        width: 25rem;
+        text-align: left;
+    }
+    .stars {
+        width: 32rem;
+        display: grid;
+        align-items: end;
+    }
+    .rate {
+        width: 24rem;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .reviews {
+        justify-self: start;
+    }
+    .guru {
+        justify-self: center;
+    }
+    .tech {
+        justify-self: end;
+    }
+
+    .second-section {
+        height: 20rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    .colton {
+        align-self: self-start;
+    }
+    .irene {
+        align-self: center;
+    }
+    .anne {
+        align-self: self-end;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 0;
+    }
+}
